@@ -12,7 +12,7 @@ public:
 	void print() {cout << "o/p: " << *x << nl;}
 	~Test() {delete x;}
 
-	// here need self-assignment opr overloading for referencing issue
+	// here need self-assignment opr. overloading for referencing issue
 	Test& operator = (const Test& t) {
 		if(this != &t) *x = *t.x;
 		return *this;
@@ -30,8 +30,6 @@ void solve() {
 
 signed main() {
 	ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
-	// int t=1; cin>>t;
-	// while(t--)
 	solve();
 
 	return 0;

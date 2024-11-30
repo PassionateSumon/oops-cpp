@@ -22,6 +22,5 @@ void solve() {
 
 signed main() {
 	solve();
-
 	return 0;
 }
